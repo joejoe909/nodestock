@@ -1,2 +1,0 @@
-# nodestock
-tutorial nodestock
