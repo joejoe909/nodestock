@@ -4,3 +4,7 @@ $ git config --global user.email "you@youraddress.com"
 $ git config --global push.default matching
 $ git config --global alias.co checkout
 $ git init
+
+
+good link on deploying to heroku
+https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true
