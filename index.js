@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 //user body parser middleware
 app.use(bodyParser.urlencoded({extended: false}));
 
-//api key pk_9e6011934ba446feb569dd100e601262 
+
 function call_api(finishedAPI, ticker){
     request('https://cloud.iexapis.com/stable/stock/'+ ticker + '/quote?token=' + process.env.API_KEY, {json: true}, (err, res, body) => {
         if(err){return console.log(err);}
@@ -26,7 +26,7 @@ function call_api(finishedAPI, ticker){
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-//Set handlebar index route
+//Set handlebar index GET route
 app.get('/', function (req, res) {
     call_api(function(doneAPI){
         
