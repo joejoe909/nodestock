@@ -32,7 +32,7 @@ app.get('/', function (req, res) {
         
         res.render('home', {stock: doneAPI});
 
-    });
+    }, "goog"); //search for google
 });
 
 //Set handlebar index POST route
